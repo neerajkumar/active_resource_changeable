@@ -8,3 +8,8 @@ Rake::TestTask.new(:test) do |t|
 end
 
 task :default => :spec
+
+desc "Open an irb session preloaded with this library"
+task :console do
+  sh "irb -Ilib -ractive_resource_changeable"
+end

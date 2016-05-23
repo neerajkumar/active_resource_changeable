@@ -32,6 +32,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "minitest", "~> 5.0"
   spec.add_development_dependency "activeresource"
   spec.add_development_dependency "rspec"
+  spec.add_development_dependency "rails"
 
   spec.add_dependency "json"
 end
