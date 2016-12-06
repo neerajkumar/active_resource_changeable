@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.name          = "active_resource_changeable"
   spec.version       = ActiveResourceChangeable::VERSION
   spec.authors       = ["Neeraj Kumar"]
-  spec.email         = ["neeraj.kumar@gmail.com"]
+  spec.email         = ["Neeraj.Kumar@gmail.com"]
 
   spec.summary       = %q{gem to track the changes of active_resource object.}
   spec.description   = %q{gem to track the changes of active_resource object.}
