@@ -20,9 +20,9 @@ Or install it yourself as:
 
 ## Usage
 
-```include ActiveResourceChangeable``` into your model and then you can call changes method on its objects. For example.
+```ruby include ActiveResourceChangeable``` into your model and then you can call changes method on its objects. For example.
 
-```
+```ruby
 class User < ActiveResource::Base
   self.site = ""
 
@@ -37,16 +37,16 @@ user.email = "neeraj1.kumar1@mailinator.com"
 user.username = "neeraj1"
 
 user.changes = {"firstname"=>["Neeraj", "Neeraj1"], "lastname"=>["Kumar", "Kumar1"], "username=>["neeraj", "neeraj1], "email"=>["neeraj.kumar@mailinator.com", "neeraj1.kumar@mailinator.com"]}
-```ruby
+```
 
 ```ActiveResourceChangeable``` works for nested ActiveResource objects too and gives the result something like 
 
-```
+```ruby
 {"companyName"=>["Skipped Levels 034", "ABC Company"],
  "address"=>{""=>{"line1"=>["1234 Skipped Levels 034", "line1"]}, "countryType"=>{"code"=>["DEU", "IND"]}},
  "countryType"=>{""=>{"code"=>["DEU", "IND"]}},
  "statusType"=>{""=>{"code"=>["A", "B"]}}}
-```ruby
+```
 
 ## Development
 
