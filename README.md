@@ -20,7 +20,10 @@ Or install it yourself as:
 
 ## Usage
 
-```ruby include ActiveResourceChangeable``` into your model and then you can call changes method on its objects. For example.
+```ruby
+include ActiveResourceChangeable
+``` 
+into your model and then you can call changes method on its objects. For example.
 
 ```ruby
 class User < ActiveResource::Base
